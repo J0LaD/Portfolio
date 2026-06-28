@@ -1,0 +1,15 @@
+
+body
+{
+    margin: 0;
+}
+
+.home
+{
+    height: 100vh;
+    background-image: url("cat_samourai.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
