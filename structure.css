@@ -4,12 +4,18 @@ body
     margin: 0;
 }
 
-.home
+header h1
 {
-    height: 100vh;
-    background-image: url("cat_samourai.png");
+    text-align: center;
+    font-size: 10vh;
+}
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+header img
+{
+    display: block;
+    margin: 200px auto;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
 }
