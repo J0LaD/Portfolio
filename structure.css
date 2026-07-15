@@ -1,73 +1,77 @@
-
-:root
-{
+:root {
     --divider-thickness: 15px;
-    --divider-color: black;
+    --divider-color: #2C3E50;
+    --bg-color: #F9F9F9;
+    --text-color: #2C3E50;
+    --content-width: 95%;
 }
 
-body
-{
+body {
     margin: 0;
-    font-family: system-ui;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-header h1
-{
+header h1, 
+footer h2 {
     text-align: center;
     font-size: clamp(3rem, 20vw, 8rem);
+}
+
+header h1 {
     margin-top: 2rem;
 }
 
-.header_divider
-{
+header h2 {
+    margin-left: 10px;
+}
+
+.divider,
+.header_divider::before,
+.header_divider::after {
+    height: var(--divider-thickness);
+    background-color: var(--divider-color);
+    border-radius: 100%;
+}
+
+.header_divider {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto auto 50px;
-    width: 95%;
+    gap: 30px;
+    margin: 0 auto 50px;
+    width: var(--content-width);
 }
 
 .header_divider::before,
-.header_divider::after
-{
+.header_divider::after {
     content: "";
     flex: 1;
-    height: var(--divider-thickness);
-    background-color: var(--divider-color);
 }
 
-.header_divider::before
-{
-    margin-right: 30px;
-}
-
-.header_divider::after
-{
-    margin-left: 30px;
-}
-
-.divider
-{
+.divider {
     border: none;
-    height: var(--divider-thickness);
-    background-color: var(--divider-color);
-    width: 95%;
+    width: var(--content-width);
     margin: 60px auto;
 }
 
-header img
-{
+header hr {
+    border: none;
+    height: 3px;
+    background-color: var(--divider-color);
+}
+
+header img {
     display: block;
-    height: 300px;
     width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.about-me
-{
-    max-width: 1300px;
+.about-me {
+    max-width: 78ch;
     margin: 0 auto;
     font-size: 2rem;
-    line-height: 2.4rem;
+    text-align: justify;
 }
