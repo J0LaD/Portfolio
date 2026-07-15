@@ -1,4 +1,6 @@
-:root {
+
+:root
+{
     --divider-thickness: 15px;
     --divider-color: #2C3E50;
     --bg-color: #F9F9F9;
@@ -6,36 +8,37 @@
     --content-width: 95%;
 }
 
-body {
+body
+{
     margin: 0;
     font-family: system-ui, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-header h1, 
-footer h2 {
+header h1
+{
     text-align: center;
     font-size: clamp(3rem, 20vw, 8rem);
-}
-
-header h1 {
     margin-top: 2rem;
 }
 
-header h2 {
+header h2
+{
     margin-left: 10px;
 }
 
 .divider,
 .header_divider::before,
-.header_divider::after {
+.header_divider::after
+{
     height: var(--divider-thickness);
     background-color: var(--divider-color);
     border-radius: 100%;
 }
 
-.header_divider {
+.header_divider
+{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -44,24 +47,28 @@ header h2 {
 }
 
 .header_divider::before,
-.header_divider::after {
+.header_divider::after
+{
     content: "";
     flex: 1;
 }
 
-.divider {
+.divider
+{
     border: none;
     width: var(--content-width);
     margin: 60px auto;
 }
 
-header hr {
+header hr
+{
     border: none;
     height: 3px;
     background-color: var(--divider-color);
 }
 
-header img {
+header img
+{
     display: block;
     width: 300px;
     height: 300px;
@@ -69,9 +76,23 @@ header img {
     border-radius: 50%;
 }
 
-.about-me {
+.about-me
+{
     max-width: 78ch;
     margin: 0 auto;
     font-size: 2rem;
     text-align: justify;
+}
+
+footer
+{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer h2
+{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 8vw, 5rem);
 }
