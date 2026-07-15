@@ -139,6 +139,16 @@ header img
     padding: 30px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(44, 62, 80, 0.2);
+    z-index: 2;
+    border-radius: 5px;
 }
 
 .project-header {
